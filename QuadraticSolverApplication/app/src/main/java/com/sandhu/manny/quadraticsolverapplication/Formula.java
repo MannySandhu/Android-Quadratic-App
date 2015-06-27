@@ -13,7 +13,8 @@ class Formula {
 
     // Quadratic equation formula
     // Take in three variables as parameters
-    public static double[] quadraticEquation(double a, double b, double c) {
+    public static double[] quadraticEquation(double a, double b, double c) 
+    {
 
         // changed this and return type to a 1D double array due to 2 outputs
         double[] solution = {-999, -999};

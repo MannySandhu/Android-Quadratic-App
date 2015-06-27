@@ -54,20 +54,26 @@ public class Solver extends Activity implements View.OnClickListener
     {
         if(view.getId == R.id.SolveEquationButton)
         {
-             // take input from edit texts and parse
-            double a = Double.parseDouble(aValue.getText().toString());
-            double b = Double.parseDouble(bValue.getText().toString());
-            double c = Double.parseDouble(cValue.getText().toString());
-
+            //Declare array for parameters
             double parameter_vals = new double[parameters.length];
 
+            //For each parameter
             for(int i=0; i<parameter_vals.length; i++)
             {
-                parameter_vals[i] = Double.parseDouble(parameters[i].getText().toString());
+                try
+                {
+                    //Get the text from the textfield and parse to double. 
+                    parameter_vals[i] = Double.parseDouble(parameters[i].getText().toString());
+                }
+                catch(Exception e)
+                {
+                    Log.d(TAG, "Error text entered into field");
+                    parameter_vals[i] = 0; 
+                }
             }
 
             // compute solutions
-            double[] sol = Formula.quadraticEquation(a, b, c);
+            double[] sol = Formula.quadraticEquation(parameter_vals[0], parameter_vals[1], parameter_vals[2]);
 
             // output solutions
             solutions[0].setText(Formula.OutputSolution(sol, 0));
