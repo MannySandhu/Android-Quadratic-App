@@ -31,12 +31,10 @@ class Formula {
     }
 
     // output parsed value
-    public static String OutputSolution(double[] x, int pos){
-
+    public static String OutputSolution(double[] x, int pos)
+    {
         String s = Double.toString(x[pos]);
         return s;
-
-
     }
 
 
