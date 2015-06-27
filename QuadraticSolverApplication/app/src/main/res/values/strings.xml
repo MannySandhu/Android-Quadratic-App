@@ -1,0 +1,32 @@
+<resources>
+    <!-- home screen -->
+    <string name="app_name">Quadratic Solver Application</string>
+    <string name="solver">Quadratic Solver</string>
+    <string name="tutorial">Quadratic Tutorial</string>
+    <string name="quiz">Quadratic Quiz</string>
+    <string name="title">Quadratic Equation application</string>
+
+    <!-- solver screen -->
+    <string name="title_activity_solver">Solver</string>
+    <string name="xSquared">x^2 +</string>
+    <string name="X">x +</string>
+    <string name="equalsZero">= 0</string>
+    <string name="solverInformation">Enter values for a, b and c</string>
+    <string name="solveButton">Solve</string>
+    <string name="xEquals">X =</string>
+    <string name="solution">s</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+
+
+
+
+
+
+    <!--version-->
+    <string name="versionNo">prototype: build v1</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

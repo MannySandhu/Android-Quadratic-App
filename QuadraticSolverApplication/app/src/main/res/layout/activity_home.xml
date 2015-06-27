@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/title"/>
+
+            <Button
+                android:id="@+id/quadraticSolverButton"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:text="@string/solver" />
+            <Button
+                android:id="@+id/quadraticTutorialButton"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:text="@string/tutorial" />
+            <Button
+                android:id="@+id/quadraticQuizButton"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:text="@string/quiz" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="1dp">
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/versionNo"/>
+
+    </LinearLayout>
+
+</LinearLayout>
