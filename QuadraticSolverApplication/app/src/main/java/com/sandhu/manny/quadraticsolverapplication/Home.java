@@ -33,7 +33,7 @@ public class Home extends Activity implements View.OnClickListener {
     }
 
     //Set onclick listeners for each button.
-    public void setListeners()
+    private void setListeners()
     {
         solverButton.setOnClickListener(this);
         tutorialButton.setOnClickListener(this);
