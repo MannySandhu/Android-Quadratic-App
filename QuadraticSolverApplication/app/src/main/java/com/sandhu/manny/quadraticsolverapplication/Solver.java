@@ -52,10 +52,10 @@ public class Solver extends Activity implements View.OnClickListener
 
     public void onClick(View view)
     {
-        if(view.getId == R.id.SolveEquationButton)
+        if(view.getId() == R.id.SolveEquationButton)
         {
             //Declare array for parameters
-            double parameter_vals = new double[parameters.length];
+            double[] parameter_vals = new double[parameters.length];
 
             //For each parameter
             for(int i=0; i<parameter_vals.length; i++)

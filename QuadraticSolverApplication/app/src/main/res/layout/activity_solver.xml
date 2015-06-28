@@ -92,15 +92,15 @@
 
             <TextView
                 android:id="@+id/SolutionTextView"
-                android:layout_width="50sp"
+                android:layout_width="70sp"
                 android:layout_height="50sp"
-                android:text="@string/solution"
+                android:hint="@string/solution"
                 android:textSize="20sp" />
             <TextView
                 android:id="@+id/SolutionTextView2"
-                android:layout_width="50sp"
+                android:layout_width="70sp"
                 android:layout_height="50sp"
-                android:text="@string/solution"
+                android:hint="@string/solution"
                 android:textSize="20sp" />
 
 

@@ -25,9 +25,9 @@ public class Home extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_home);
 
         // Link object variables to view ids.
-        solverButton = (Button)findViewById(quadraticSolverButton);
-        tutorialButton = (Button)findViewById(quadraticTutorialButton);
-        quizButton = (Button)findViewById(quadraticQuizButton);
+        solverButton = (Button)findViewById(R.id.quadraticSolverButton);
+        tutorialButton = (Button)findViewById(R.id.quadraticTutorialButton);
+        quizButton = (Button)findViewById(R.id.quadraticQuizButton);
 
         setListeners();
     }
