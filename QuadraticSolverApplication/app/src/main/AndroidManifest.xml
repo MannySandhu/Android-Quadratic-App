@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.sandhu.manny.quadraticsolverapplication.Home" />
         </activity>
+        <activity
+            android:name=".QuizActivity"
+            android:label="@string/title_activity_quiz"
+            android:parentActivityName=".Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sandhu.manny.quadraticsolverapplication.Home" />
+        </activity>
     </application>
 
 </manifest>
