@@ -32,7 +32,7 @@ public class Solver extends Activity implements View.OnClickListener
 
         setContentView(R.layout.activity_solver);
 
-        parameters = new EditText[2];
+        parameters = new EditText[3];
 
         // wire up widgets to java variables
         parameters[0] = (EditText) findViewById(R.id.a_value);
