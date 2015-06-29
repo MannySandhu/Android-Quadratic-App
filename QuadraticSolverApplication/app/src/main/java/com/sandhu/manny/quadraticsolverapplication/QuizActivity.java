@@ -26,47 +26,15 @@ public class QuizActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        // inflate default fragment
+        // inflate default quiz fragment
         quizFragment();
 
-        // initialise variables on create for default fragment
-        noSolution = (Button)findViewById(R.id.NoSolutionButton);
-        oneSolution = (Button)findViewById(R.id.OneSolutionButton);
-        twoSolution = (Button)findViewById(R.id.TwoSolutionButton);
-
 
     }
 
 
 
-    // create fragments
-    // default fragment layout
-    public void quizFragment(){
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        QuizFragment quizFragment = new QuizFragment();
-
-        ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Default Fragment");
-        ft.commit();
-        
-    }
-
-    // inflate fragment layout for one solution
-    public void oneSolution(){
-
-    }
-
-    // inflate fragment layout for two solutions
-    public void twoSolutionFragment(){
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        QuizFragment quizFragment = new QuizFragment();
-
-        ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Two Solution Fragment");
-        ft.commit();
-    }
-
-    // set up listeners
+    // set up listeners for default quiz fragment
     private void setListeners(){
         noSolution.setOnClickListener(this);
         oneSolution.setOnClickListener(this);
@@ -100,6 +68,40 @@ public class QuizActivity extends Activity implements View.OnClickListener {
                 break;
         }
 
+    }
+
+
+    // create fragments
+
+    // default fragment layout
+    public void quizFragment(){
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        QuizFragment quizFragment = new QuizFragment();
+
+        ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Default Fragment");
+        ft.commit();
+
+        // initialise variables on create for default fragment
+        noSolution = (Button)findViewById(R.id.NoSolutionButton);
+        oneSolution = (Button)findViewById(R.id.OneSolutionButton);
+        twoSolution = (Button)findViewById(R.id.TwoSolutionButton);
+
+    }
+
+    // inflate fragment layout for one solution
+    public void oneSolution(){
+
+    }
+
+    // inflate fragment layout for two solutions
+    public void twoSolutionFragment(){
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        QuizFragment quizFragment = new QuizFragment();
+
+        ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Two Solution Fragment");
+        ft.commit();
     }
 
 }
