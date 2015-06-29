@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="200dp"
+    android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="#9ACD32">
 
     <LinearLayout
@@ -13,7 +13,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="15dp"
-            android:textSize="25sp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
             android:text="@string/fragmentSolutionChoice"/>
 
         <LinearLayout
@@ -24,17 +25,17 @@
 
             <Button
                 android:id="@+id/NoSolutionButton"
-                android:layout_width="115dp"
+                android:layout_width="100dp"
                 android:layout_height="80dp"
                 android:text="@string/noSolution"/>
             <Button
                 android:id="@+id/OneSolutionButton"
-                android:layout_width="115dp"
+                android:layout_width="100dp"
                 android:layout_height="80dp"
                 android:text="@string/oneSolution"/>
             <Button
                 android:id="@+id/TwoSolutionButton"
-                android:layout_width="115dp"
+                android:layout_width="100dp"
                 android:layout_height="80dp"
                 android:text="@string/twoSolutions"/>
 

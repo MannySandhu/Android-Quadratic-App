@@ -16,6 +16,7 @@ public class QuizActivity extends Activity implements View.OnClickListener {
     // logging
     private final String TAG = "QuizActivity";
 
+    // default fragment buttons
     private Button noSolution;
     private Button oneSolution;
     private Button twoSolution;
@@ -28,10 +29,12 @@ public class QuizActivity extends Activity implements View.OnClickListener {
         // inflate default fragment
         quizFragment();
 
-        // initialise variables on create
+        // initialise variables on create for default fragment
         noSolution = (Button)findViewById(R.id.NoSolutionButton);
         oneSolution = (Button)findViewById(R.id.OneSolutionButton);
         twoSolution = (Button)findViewById(R.id.TwoSolutionButton);
+
+
     }
 
 
@@ -43,8 +46,9 @@ public class QuizActivity extends Activity implements View.OnClickListener {
         FragmentTransaction ft = fm.beginTransaction();
         QuizFragment quizFragment = new QuizFragment();
 
-        ft.add(R.layout.quiz_fragment_layout, quizFragment);
+        ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Default Fragment");
         ft.commit();
+        
     }
 
     // inflate fragment layout for one solution
@@ -58,7 +62,7 @@ public class QuizActivity extends Activity implements View.OnClickListener {
         FragmentTransaction ft = fm.beginTransaction();
         QuizFragment quizFragment = new QuizFragment();
 
-        ft.add(R.layout.two_solution_fragment, quizFragment);
+        ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Two Solution Fragment");
         ft.commit();
     }
 
