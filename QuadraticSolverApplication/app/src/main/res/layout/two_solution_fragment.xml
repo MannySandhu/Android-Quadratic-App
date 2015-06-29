@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="200dp"
+    android:background="#9ACD32">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:text="@string/twoSolutionInformation"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="80sp"
+                android:layout_height="match_parent"
+                android:text="@string/xEquals"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/SolutionTextView"
+                android:layout_width="80sp"
+                android:layout_height="match_parent"
+                android:hint="@string/solution"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/SolutionTextView2"
+                android:layout_width="80sp"
+                android:layout_height="match_parent"
+                android:hint="@string/solution"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="@string/backButton" />
+
+            <Button
+                android:id="@+id/SolveEquationButton"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="@string/solveButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

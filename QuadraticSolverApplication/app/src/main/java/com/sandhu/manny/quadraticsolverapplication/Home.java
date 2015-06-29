@@ -49,16 +49,20 @@ public class Home extends Activity implements View.OnClickListener {
             case R.id.quadraticQuizButton:
                 Log.d(TAG, "Quadratic Quiz button pressed");
                 //Start quiz activity
+                startActivity(new Intent(Home.this, QuizActivity.class));
                 break;
+
             case R.id.quadraticSolverButton:
                 Log.d(TAG, "Quadratic Solver button pressed");
                 // Start Solver activity
                 startActivity(new Intent(Home.this, Solver.class));
                 break;
+
             case R.id.quadraticTutorialButton:
                 Log.d(TAG, "Quadratic Tutorial button pressed");
                 //Start tutorial activity
                 break;
+
         }
 
     }

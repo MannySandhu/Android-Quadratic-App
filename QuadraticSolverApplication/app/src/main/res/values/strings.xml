@@ -27,6 +27,15 @@
     <string name="q1">1x^2 + 4x + 4 = 0</string>
     <string name="q2">1x^2 + x - 4 = 0</string>
 
+    <!-- quiz fragment -->
+    <string name="fragmentSolutionChoice">How many solutions are there?</string>
+    <string name="twoSolutionInformation">Enter two values:</string>
+    <string name="noSolution">No Solution</string>
+    <string name="oneSolution">One Solution</string>
+    <string name="twoSolutions">Two Solutions</string>
+    <string name="next">Next Equation</string>
+    <string name="backButton">Back</string>
+
 
 
 
