@@ -11,15 +11,10 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class QuizActivity extends Activity implements View.OnClickListener {
+public class QuizActivity extends Activity  {
 
     // logging
     private final String TAG = "QuizActivity";
-
-    // default fragment buttons
-    private Button noSolution;
-    private Button oneSolution;
-    private Button twoSolution;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,45 +29,6 @@ public class QuizActivity extends Activity implements View.OnClickListener {
 
 
 
-    // set up listeners for default quiz fragment
-    private void setListeners(){
-        noSolution.setOnClickListener(this);
-        oneSolution.setOnClickListener(this);
-        twoSolution.setOnClickListener(this);
-    }
-
-
-    // actions performed on click
-    public void onClick(View view){
-
-        //Depending on the button clicked..
-        switch(view.getId())
-        {
-            case R.id.NoSolutionButton:
-                Log.d(TAG, "No solution button pressed");
-                // no solution action
-
-                break;
-
-            case R.id.OneSolutionButton:
-                Log.d(TAG, "One solution button pressed");
-                // inflate one solution fragment
-
-                break;
-
-            case R.id.TwoSolutionButton:
-                Log.d(TAG, "Two solution button pressed");
-                // inflate two solution fragment
-                twoSolutionFragment();
-
-                break;
-        }
-
-    }
-
-
-    // create fragments
-
     // default fragment layout
     public void quizFragment(){
         FragmentManager fm = getFragmentManager();
@@ -81,12 +37,6 @@ public class QuizActivity extends Activity implements View.OnClickListener {
 
         ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Default Fragment");
         ft.commit();
-
-        // initialise variables on create for default fragment
-        noSolution = (Button)findViewById(R.id.NoSolutionButton);
-        oneSolution = (Button)findViewById(R.id.OneSolutionButton);
-        twoSolution = (Button)findViewById(R.id.TwoSolutionButton);
-
     }
 
     // inflate fragment layout for one solution
