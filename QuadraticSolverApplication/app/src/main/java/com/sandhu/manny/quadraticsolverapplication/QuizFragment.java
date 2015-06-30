@@ -17,8 +17,8 @@ import com.sandhu.manny.quadraticsolverapplication.R;
 /**
  * Created by Manny S on 29/06/2015.
  */
-public class QuizFragment extends Fragment implements View.OnClickListener {
-
+public class QuizFragment extends Fragment implements View.OnClickListener
+{
     // logging
     private final String TAG = "QuizDefaultFragment";
 
@@ -27,7 +27,8 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
 
         View v = inflater.inflate(R.layout.quiz_fragment_layout, container, false);
 
@@ -36,23 +37,27 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
         solutionOptions[2] = (Button)v.findViewById(R.id.TwoSolutionButton);
         solutionOptions[3] = (Button)v.findViewById(R.id.NextEquationButton);
 
-        setListeners(); //- this causes problems
-
         return v;
     }
 
+    public View onStart()
+    {
+        setListeners(); //- this causes problems
+    }
 
     // set up listeners for default quiz fragment
-    private void setListeners(){
-        solutionOptions[0].setOnClickListener(this);
-        solutionOptions[1].setOnClickListener(this);
-        solutionOptions[2].setOnClickListener(this);
-        solutionOptions[3].setOnClickListener(this);
+    private void setListeners()
+    {
+        for(int i=0; i<solutionOptions.Length(); i++)
+        {
+            solutionOptions[i].setOnClickListener(this);
+        }
     }
 
 
     // inflate fragment layout for one solution
-    public void oneSolutionFragment(){
+    public void oneSolutionFragment()
+    {
 
     }
 
