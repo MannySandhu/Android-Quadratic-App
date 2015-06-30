@@ -2,6 +2,8 @@ package com.sandhu.manny.quadraticsolverapplication;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -21,7 +23,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
     private final String TAG = "QuizDefaultFragment";
 
     // array holds fragment buttons
-    private Button [] solutionOptions = new Button[3];
+    private Button [] solutionOptions = new Button[4];
 
     @Nullable
     @Override
@@ -32,6 +34,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
         solutionOptions[0] = (Button)v.findViewById(R.id.NoSolutionButton);
         solutionOptions[1] = (Button)v.findViewById(R.id.OneSolutionButton);
         solutionOptions[2] = (Button)v.findViewById(R.id.TwoSolutionButton);
+        solutionOptions[3] = (Button)v.findViewById(R.id.NextEquationButton);
 
         setListeners(); //- this causes problems
 
@@ -44,6 +47,25 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
         solutionOptions[0].setOnClickListener(this);
         solutionOptions[1].setOnClickListener(this);
         solutionOptions[2].setOnClickListener(this);
+        solutionOptions[3].setOnClickListener(this);
+    }
+
+
+    // inflate fragment layout for one solution
+    public void oneSolutionFragment(){
+
+    }
+
+    // inflate fragment layout for two solutions
+    public void twoSolutionFragment(){
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        QuizFragment quizFragment = new QuizFragment();
+
+        ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Two Solution Fragment");
+        ft.commit();
+
     }
 
 
@@ -62,13 +84,20 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
             case R.id.OneSolutionButton:
                 Log.d(TAG, "One solution button pressed");
                 // inflate one solution fragment
+                oneSolutionFragment();
 
                 break;
 
             case R.id.TwoSolutionButton:
                 Log.d(TAG, "Two solution button pressed");
                 // inflate two solution fragment
+                twoSolutionFragment();
 
+                break;
+
+            case R.id.NextEquationButton:
+                Log.d(TAG, "Next Equation button pressed");
+                // set next equation on root view
 
                 break;
         }

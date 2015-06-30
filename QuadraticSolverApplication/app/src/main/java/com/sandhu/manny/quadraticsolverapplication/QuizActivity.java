@@ -24,34 +24,20 @@ public class QuizActivity extends Activity  {
         // inflate default quiz fragment
         quizFragment();
 
-
     }
-
 
 
     // default fragment layout
     public void quizFragment(){
+
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         QuizFragment quizFragment = new QuizFragment();
 
         ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Default Fragment");
         ft.commit();
-    }
-
-    // inflate fragment layout for one solution
-    public void oneSolution(){
 
     }
 
-    // inflate fragment layout for two solutions
-    public void twoSolutionFragment(){
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        QuizFragment quizFragment = new QuizFragment();
-
-        ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Two Solution Fragment");
-        ft.commit();
-    }
 
 }
