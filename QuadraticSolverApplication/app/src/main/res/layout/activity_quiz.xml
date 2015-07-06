@@ -38,14 +38,14 @@
     </LinearLayout>
 
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:orientation="horizontal"
         android:id="@+id/activity_quiz_fragment" >
 
 
-    </LinearLayout>
+    </FrameLayout>
 
 
 </LinearLayout>

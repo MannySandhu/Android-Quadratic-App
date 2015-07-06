@@ -58,7 +58,7 @@
                 android:text="@string/backButton" />
 
             <Button
-                android:id="@+id/SolveEquationButton"
+                android:id="@+id/FragmentSolveButton"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:text="@string/solveButton" />

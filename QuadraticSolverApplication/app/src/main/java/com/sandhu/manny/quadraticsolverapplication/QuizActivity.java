@@ -33,10 +33,8 @@ public class QuizActivity extends Activity  {
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         QuizFragment quizFragment = new QuizFragment();
-
         ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Default Fragment");
         ft.commit();
-
     }
 
 

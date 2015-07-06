@@ -61,11 +61,9 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
 
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        QuizFragment quizFragment = new QuizFragment();
-
+        TwoSolutionFragment quizFragment = new TwoSolutionFragment();
         ft.add(R.id.activity_quiz_fragment, quizFragment, "Quiz Two Solution Fragment");
         ft.commit();
-
     }
 
 
