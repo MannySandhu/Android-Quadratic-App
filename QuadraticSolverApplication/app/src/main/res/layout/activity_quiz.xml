@@ -67,7 +67,7 @@
                 android:text="@string/plus"
                 android:textSize="30sp"
                 android:padding="10dp"/>
-            
+
             <TextView
                 android:id="@+id/C"
                 android:layout_width="wrap_content"
