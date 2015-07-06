@@ -11,7 +11,7 @@
     <string name="xSquared">x^2 +</string>
     <string name="X">x +</string>
     <string name="equalsZero">= 0</string>
-    <string name="solverInformation">Enter values for a, b and c</string>
+    <string name="solverInformation">Enter values for a, b and c:</string>
     <string name="solveButton">Solve</string>
     <string name="xEquals">X =</string>
     <string name="solution">s</string>
@@ -24,8 +24,15 @@
     <string name="correct">Correct!</string>
     <string name="incorrect">Incorrect</string>
 
-    <string name="q1">1x^2 + 4x + 4 = 0</string>
-    <string name="q2">1x^2 + x - 4 = 0</string>
+    <!-- quiz equation contents -->
+    <string name="aValue">A</string>
+    <string name="bValue">B</string>
+    <string name="cValue">C</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="xValue">x</string>
+    <string name="squared">x^2</string>
+
 
     <!-- quiz fragment -->
     <string name="fragmentSolutionChoice">How many solutions are there?</string>

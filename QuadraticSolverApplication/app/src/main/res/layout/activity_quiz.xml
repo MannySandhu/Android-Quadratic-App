@@ -20,18 +20,67 @@
             android:layout_gravity="center" />
 
 
+        <!-- equation contents -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="20sp">
 
+            <!-- form equation -->
             <TextView
-                android:id="@+id/Question"
+                android:id="@+id/A"
                 android:layout_width="wrap_content"
-                android:layout_height="50sp"
-                android:hint="@string/q1"
+                android:layout_height="wrap_content"
+                android:hint="@string/aValue"
                 android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/squared"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/FirstOperation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plus"
+                android:textSize="30sp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/bValue"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xValue"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/SecondOperation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plus"
+                android:textSize="30sp"
+                android:padding="10dp"/>
+            
+            <TextView
+                android:id="@+id/C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/cValue"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equalsZero"
+                android:textSize="30sp"
+                android:padding="10dp"/>
+            <!-- end forming equation -->
 
         </LinearLayout>
 
