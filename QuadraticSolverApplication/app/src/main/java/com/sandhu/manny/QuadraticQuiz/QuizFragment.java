@@ -1,6 +1,5 @@
-package com.sandhu.manny.quadraticsolverapplication;
+package com.sandhu.manny.QuadraticQuiz;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -12,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.sandhu.manny.QuadraticQuiz.TwoFragment.TwoSolutionFragment;
 import com.sandhu.manny.quadraticsolverapplication.R;
 
 /**

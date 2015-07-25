@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Home"
+            android:name="com.sandhu.manny.QuadraticHome.Home"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,20 +17,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Solver"
+            android:name="com.sandhu.manny.QuadraticSolver.Solver"
             android:label="@string/solver"
-            android:parentActivityName=".Home" >
+            android:parentActivityName="com.sandhu.manny.QuadraticHome.Home" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.sandhu.manny.quadraticsolverapplication.Home" />
+                android:value="com.sandhu.manny.QuadraticHome.Home" />
         </activity>
         <activity
-            android:name=".QuizActivity"
+            android:name="com.sandhu.manny.QuadraticQuiz.QuizActivity"
             android:label="@string/title_activity_quiz"
-            android:parentActivityName=".Home" >
+            android:parentActivityName="com.sandhu.manny.QuadraticHome.Home" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.sandhu.manny.quadraticsolverapplication.Home" />
+                android:value="com.sandhu.manny.QuadraticHome.Home" />
         </activity>
     </application>
 

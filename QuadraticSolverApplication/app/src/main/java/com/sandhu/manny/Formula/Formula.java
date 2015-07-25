@@ -1,4 +1,4 @@
-package com.sandhu.manny.quadraticsolverapplication;
+package com.sandhu.manny.Formula;
 
 import android.widget.EditText;
 import android.widget.TextView;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 
 // class holds quadratic formula
-class Formula {
+public class Formula {
 
     // Quadratic equation formula
     // Take in three variables as parameters

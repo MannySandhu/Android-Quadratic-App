@@ -1,14 +1,11 @@
-package com.sandhu.manny.quadraticsolverapplication;
+package com.sandhu.manny.QuadraticQuiz;
 
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
+
+import com.sandhu.manny.quadraticsolverapplication.R;
 
 
 public class QuizActivity extends Activity  {
