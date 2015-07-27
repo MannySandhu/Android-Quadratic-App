@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.sandhu.manny.QuadraticQuiz.QuizActivity;
+import com.sandhu.manny.QuadraticQuiz.Quiz.QuizActivity;
 import com.sandhu.manny.quadraticsolverapplication.R;
 import com.sandhu.manny.QuadraticSolver.Solver;
 

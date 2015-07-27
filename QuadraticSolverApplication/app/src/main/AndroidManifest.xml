@@ -25,7 +25,7 @@
                 android:value="com.sandhu.manny.QuadraticHome.Home" />
         </activity>
         <activity
-            android:name="com.sandhu.manny.QuadraticQuiz.QuizActivity"
+            android:name="com.sandhu.manny.QuadraticQuiz.Quiz.QuizActivity"
             android:label="@string/title_activity_quiz"
             android:parentActivityName="com.sandhu.manny.QuadraticHome.Home" >
             <meta-data

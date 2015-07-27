@@ -1,17 +1,19 @@
-package com.sandhu.manny.QuadraticQuiz;
+package com.sandhu.manny.QuadraticQuiz.Quiz;
 
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 
+import com.sandhu.manny.QuadraticQuiz.Quiz.Equation.SetupEquation;
 import com.sandhu.manny.quadraticsolverapplication.R;
 
 
-public class QuizActivity extends Activity  {
+public class QuizActivity extends Activity {
 
     // logging
     private final String TAG = "QuizActivity";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public class QuizActivity extends Activity  {
 
         // inflate default quiz fragment
         quizFragment();
+        SetupEquation equation = new SetupEquation();
 
     }
 
